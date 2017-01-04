@@ -1,5 +1,0 @@
-ferryfive:
-  hosts:
-    int.budweiser.kasten.beer:
-  roles:
-   - docker
