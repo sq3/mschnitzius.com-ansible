@@ -1,0 +1,11 @@
+---
+- hosts: int.budweiser.kasten.beer
+  become_method: sudo
+  become: yes
+
+  pre_tasks:
+    - roles: docker
+
+  roles:
+    - postgresql-docker
+    - docker

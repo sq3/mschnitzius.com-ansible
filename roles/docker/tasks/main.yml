@@ -1,0 +1,13 @@
+---
+- name: Install docker and pip for ansible management
+  pacman: name={{item}} state=installed
+  with_items:
+       - docker
+       - python-pip
+
+- name: install pip packages for ansible
+  pip: name= "{{ item }}"
+  with_items:
+    - setuptools
+    - docker-py
+    - python-psycopg2
