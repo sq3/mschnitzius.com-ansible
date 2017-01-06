@@ -1,4 +1,4 @@
 netcup:
   hosts:
-    int.redstripe.kasten.beer:
+    int.node-1.ff.mschnitzius.com:
         ansible_port=2222

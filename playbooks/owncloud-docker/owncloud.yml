@@ -1,5 +1,5 @@
 ---
-- hosts: int.budweiser.kasten.beer
+- hosts: int.storage-1.ff.mschnitzius.com
   become_method: sudo
   become: yes
 
