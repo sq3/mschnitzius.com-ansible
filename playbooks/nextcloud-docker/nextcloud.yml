@@ -2,9 +2,8 @@
 - hosts: int.node-1.nc.mschnitzius.com
   become_method: sudo
   become: yes
-      pre_tasks:
-      - roles: docker
 
   roles:
-    - mysql-docker
-    - nextcloud-docker
+   - docker
+   - mysql-docker
+   - nextcloud-docker
