@@ -1,0 +1,7 @@
+[netcup]
+int.node-1.nc.mschnitzius.com ansible_port=2222
+*.kasten.beer
+
+[ferryfive]
+int.storage-1.ff.mschnitzius.com
+int.pi-1.ff.mschnitzius.com
