@@ -1,0 +1,9 @@
+---
+- name: mysql docker container
+  docker_container:
+    name: "{{ mysql_instance_name }}"
+    image: mysql: "{{ mysql_version }}"
+    state: started
+    pull: always
+    volumes:
+      - "{{ mysql_host_path }}:/var/lib/mysql"
