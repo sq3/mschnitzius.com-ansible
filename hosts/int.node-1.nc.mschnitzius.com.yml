@@ -1,4 +1,4 @@
 netcup:
   hosts:
-    int.node-1.ff.mschnitzius.com:
+    int.node-1.nc.mschnitzius.com:
         ansible_port=2222
