@@ -1,0 +1,19 @@
+---
+- name: nextcloud docker container
+  docker_container:
+    name: nextcloud_app
+    image: wonderfall/nextcloud: "{{ nextcloud_version }}"
+    state: started
+    pull: always
+    volumes:
+      - "/opt/nextcloud/config:/config"
+      - "/opt/nextcloud/apps:/apps2"
+      - "/opt/nextcloud/redis:/var/lib/redis"
+      - "/srv/data/nextcloud:/data"
+    env:
+      DB_TYPE: "mysql"
+      DB_NAME: "nextcloud_db"
+      DB_USER: "nextcloud"
+      DB_PASSWORD: "{{ nextcloud_db_password  }}"
+      ADMIN_USER: "{{ nextcloud_admin_user }}"
+      ADMIN_PASSOWRD: "{{ nextcloud_admin_pass }}"
