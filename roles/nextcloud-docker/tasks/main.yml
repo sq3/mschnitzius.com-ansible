@@ -1,15 +1,21 @@
 ---
+#- name: creates requiered directories
+#    file: path="{{ nextcloud_config }}" state=directory
+#    file: path="{{ nextcloud_apps }}" state=directory
+#    file: path="{{ redis }}" state=directory
+#    file: path="{{ nextcloud_data }}" state=directory
+
 - name: nextcloud docker container
   docker_container:
     name: nextcloud_app
-    image: wonderfall/nextcloud: "{{ nextcloud_version }}"
+    image: "wonderfall/nextcloud:{{ nextcloud_version }}"
     state: started
     pull: always
     volumes:
-      - "/opt/nextcloud/config:/config"
-      - "/opt/nextcloud/apps:/apps2"
-      - "/opt/nextcloud/redis:/var/lib/redis"
-      - "/srv/data/nextcloud:/data"
+      - "{{ nextcloud_config }}:/config"
+      - "{{ nextcloud_apps }}:/apps2"
+      - "{{ redis }}:/var/lib/redis"
+      - "{{ nextcloud_data }}:/data"
     env:
       DB_TYPE: "mysql"
       DB_NAME: "nextcloud_db"
