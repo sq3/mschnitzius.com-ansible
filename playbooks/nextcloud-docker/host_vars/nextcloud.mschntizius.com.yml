@@ -2,3 +2,12 @@ nextcloud_version: 11.0
 nextcloud_db_password: "{{ vault_nextcloud_db_password }}"
 nextcloud_admin_user: "{{ vault_nextcloud_admin_user }}"
 nextcloud_admin_pass: "{{ vault_nextcloud_admin_pass }}"
+
+nextcloud_data: /srv/data/nfs/nextcloud
+
+
+mysql_instance_name: nextcloud_db
+mysql_host_path: /opt/nextcloud/mysql/
+mysql_container_links: nextcloud:nextcloud_db
+
+# mysql_dump: /opt/nextcloud/mysql/dumps/
