@@ -7,8 +7,7 @@
        - python2
 
 - name: install pip packages for ansible
-  pip: name= "{{ item }}"
+  pip: name={{ item }}
   with_items:
     - setuptools
     - docker-py
-    - python-psycopg2
