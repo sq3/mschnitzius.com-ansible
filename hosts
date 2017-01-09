@@ -1,6 +1,5 @@
 [netcup]
-int.node-1.nc.mschnitzius.com ansible_port=2222
-*.kasten.beer
+int.node-1.nc.mschnitzius.com ansible_port=2222 ansible_python_interpreter=/usr/bin/python2
 
 [ferryfive]
 int.storage-1.ff.mschnitzius.com
