@@ -1,0 +1,26 @@
+---
+- name: Make sure we have python2
+    raw: sudo pacman -S python2 --noconfirm
+
+- name: Update pacman cache
+    pacman: update_cache=yes
+
+- name: Install utility packages
+    pacman: name={{ item }} state=present
+      with_items: util_packages
+        notify: Run updatedb
+
+- locale_gen:
+    name: en_US.UTF-8
+    state: present
+
+- name: set timezone to Europe/Berlin
+  timezone:
+    name: UTC
+
+- user:
+    name: squeeze
+    shell: /bin/bash
+    uid: 1511
+    group: squeeze
+

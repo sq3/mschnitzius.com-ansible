@@ -1,0 +1,13 @@
+---
+util_packages:
+  - base-devel
+  - htop
+  - vim
+  - rsync
+  - python2-pip
+  - git
+  - tree
+  - tmux
+  - iotop
+  - ncdu
+  - wget
