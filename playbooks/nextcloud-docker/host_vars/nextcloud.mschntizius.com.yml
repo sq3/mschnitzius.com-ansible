@@ -5,7 +5,6 @@ nextcloud_admin_pass: "{{ vault_nextcloud_admin_pass }}"
 
 nextcloud_data: /srv/data/nfs/nextcloud
 
-
 mysql_instance_name: nextcloud_db
 mysql_host_path: /opt/nextcloud/mysql/
 mysql_container_links: nextcloud:nextcloud_db
