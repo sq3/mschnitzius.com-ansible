@@ -7,12 +7,8 @@ This repository manages the inventory of the mschnitzius.com network.
 	roles
 	├── arch-common
 	├── docker
-	├── letsencrypt-docker
 	├── mysql-docker
-	├── nextcloud-docker
-	├── nginx-docker
-	├── owncloud-docker
-	└── postgresql-docker
+	└── nextcloud-docker
 	playbooks
 	├── arch
 	└── nextcloud-docker
