@@ -5,7 +5,6 @@
     image: "mysql:{{ mysql_version }}"
     state: started
     pull: true
-    links: "{{ mysql_container_links }}"
     volumes:
     - "{{ mysql_host_path }}:/var/lib/mysql"
 

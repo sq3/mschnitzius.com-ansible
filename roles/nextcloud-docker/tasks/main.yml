@@ -11,6 +11,7 @@
     image: "wonderfall/nextcloud:{{ nextcloud_version }}"
     state: started
     pull: always
+    links: nextcloud_db:db
     volumes:
       - "{{ nextcloud_config }}:/config"
       - "{{ nextcloud_apps }}:/apps2"
