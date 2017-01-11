@@ -4,6 +4,6 @@
   become: yes
 
   roles:
-   - docker
+   - docker-arch
    - mysql-docker
    - nextcloud-docker
