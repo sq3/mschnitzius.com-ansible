@@ -1,4 +1,1 @@
 mysql_version: 5.7
-mysql_instance_name: null
-mysql_container_links: null
-mysql_host_path: null
