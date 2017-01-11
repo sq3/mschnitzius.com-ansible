@@ -3,11 +3,12 @@
   pacman: name={{item}}
   with_items:
        - docker
-       - python-pip
+       - python2-pip
        - python2
 
 - name: install pip packages for ansible
-  pip: name= "{{ item }}"
+  pip: name= "{{ item }}" executable=/usr/bin/pip2
+  become: true
   with_items:
     - setuptools
     - docker-py
