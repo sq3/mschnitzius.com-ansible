@@ -1,3 +1,4 @@
 ansible.log
 vault_pass.txt
 *.retry
+env/
