@@ -10,7 +10,8 @@
     name: nextcloud_app
     image: "wonderfall/nextcloud:{{ nextcloud_version }}"
     state: started
-    links: nextcloud_db:db
+    recreate: yes
+    links: nextcloud_db:nextcloud_db
     volumes:
       - "{{ nextcloud_config }}:/config"
       - "{{ nextcloud_apps }}:/apps2"
@@ -22,4 +23,4 @@
       DB_USER: "nextcloud"
       DB_PASSWORD: "{{ nextcloud_db_password  }}"
       ADMIN_USER: "{{ nextcloud_admin_user }}"
-      ADMIN_PASSOWRD: "{{ nextcloud_admin_pass }}"
+      ADMIN_PASSOWRD: "{{ nextcloud_admin_password }}"

@@ -4,9 +4,13 @@
     name: "{{ mysql_instance_name }}"
     image: "mysql:{{ mysql_version }}"
     state: started
+    recreate: yes
     pull: true
     volumes:
     - "{{ mysql_host_path }}:/var/lib/mysql"
+    env:
+      MYSQL_ROOT_PASSWORD: "{{ mysql_root_password }}"
+      MYSQL_DATABASE: "{{ mysql_database }}"
 
 # TODO
 # script for mysqldump
