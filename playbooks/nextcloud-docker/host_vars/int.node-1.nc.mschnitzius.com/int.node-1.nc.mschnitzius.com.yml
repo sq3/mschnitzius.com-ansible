@@ -6,6 +6,8 @@ nextcloud_admin_password: "{{ vault_nextcloud_admin_password }}"
 nextcloud_data: /srv/data/nfs/nextcloud
 
 mysql_root_password: "{{ vault_mysql_root_password }}"
+mysql_application_user: "{{ vault_mysql_application_user }}"
+mysql_application_password: "{{ vault_nextcloud_db_password }}"
 mysql_database: nextcloud
 
 mysql_instance_name: nextcloud_db
