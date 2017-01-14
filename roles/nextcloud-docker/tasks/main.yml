@@ -1,10 +1,4 @@
 ---
-#- name: creates requiered directories
-#    file: path="{{ nextcloud_config }}" state=directory
-#    file: path="{{ nextcloud_apps }}" state=directory
-#    file: path="{{ redis }}" state=directory
-#    file: path="{{ nextcloud_data }}" state=directory
-
 - name: nextcloud docker container
   docker_container:
     name: nextcloud_app
