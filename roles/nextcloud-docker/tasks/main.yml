@@ -5,6 +5,7 @@
     image: "wonderfall/nextcloud:{{ nextcloud_version }}"
     state: started
     recreate: yes
+    ports: 8888:8888
     links: nextcloud_db
     volumes:
       - "{{ nextcloud_config }}:/config"
