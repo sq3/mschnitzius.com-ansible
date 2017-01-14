@@ -3,6 +3,11 @@
   become_method: sudo
   become: yes
 
+  pre_tasks:
+  - name: create zfs dataset
+    command: zfs create tank/docker/data/nextcloud -o mountpoint=/opt/nextcloud
+    ignore_errors: True
+
   roles:
    - docker-arch
    - mysql-docker
