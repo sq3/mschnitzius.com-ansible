@@ -11,6 +11,8 @@
     env:
       MYSQL_ROOT_PASSWORD: "{{ mysql_root_password }}"
       MYSQL_DATABASE: "{{ mysql_database }}"
+      MYSQL_USER: "{{ mysql_application_user }}"
+      MYSQL_PASSWORD: "{{ mysql_application_password }}"
 
 # TODO
 # script for mysqldump
