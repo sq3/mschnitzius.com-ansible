@@ -13,8 +13,9 @@
       - "{{ nextcloud_data }}:/data"
     env:
       DB_TYPE: "mysql"
-      DB_NAME: "nextcloud_db"
-      DB_USER: "nextcloud"
+      DB_NAME: "nextcloud"
+      DB_HOST: "nextcloud_db"
+      DB_USER: "{{ mysql_application_user }}"
       DB_PASSWORD: "{{ nextcloud_db_password  }}"
       ADMIN_USER: "{{ nextcloud_admin_user }}"
       ADMIN_PASSOWRD: "{{ nextcloud_admin_password }}"
