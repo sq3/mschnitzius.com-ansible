@@ -1,0 +1,11 @@
+wordpress_instance_name: "{{ vault_wordpress_instance_name }}"
+wordpress_data: "/opt/wordpress_{{ wordpress_instance_name }}/"
+
+mysql_root_password: "{{ vault_mysql_root_password }}"
+mysql_application_user: "{{ wordpress_db_user }}"
+mysql_application_password: "{{ vault_wordpress_db_password }}"
+mysql_database: wordpress
+
+mysql_instance_name: "wordpress_db_{{ wordpress_instance_name }}"
+mysql_host_path: "/opt/wordpress_{{ wordpress_instance_name }}/mysql/"
+mysql_container_links: "wordpress_db_{{ wordpress_instance_name }}"

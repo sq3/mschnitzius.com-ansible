@@ -1,0 +1,14 @@
+---
+- hosts: int.node-1.nc.mschnitzius.com
+  become_method: sudo
+  become: yes
+
+  pre_tasks:
+  - name: create zfs dataset
+    command: zfs create "tank/docker/data/wordpress_{{ wordpress_instance_name }}" -o "mountpoint=/opt/wordpress_{{ wordpress_instance_name }}"
+    ignore_errors: True
+
+  roles:
+   - docker-arch
+   - mysql-docker
+   - wordpress-docker
