@@ -46,7 +46,7 @@ printf "
 printf "
  !!  do you want to push this role to github? \n
 
- !!  this requires that you've set up this repo on github.com
+ !!  this requires that you've set up this repo on https://github.com/new
 
  >>  press ENTER to continue
 "
