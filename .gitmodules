@@ -2,5 +2,5 @@
 	path = roles/mysql-docker
 	url = git@github.com:sq3/ansible-role-mysql-docker.git
 [submodule "roles/ansible-role-nextcloud-docker"]
-	path = roles/ansible-role-nextcloud-docker
+	path = roles/nextcloud-docker
 	url = git@github.com:sq3/ansible-role-nextcloud-docker.git
