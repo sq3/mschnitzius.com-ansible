@@ -1,5 +1,0 @@
----
- nextcloud_config: /opt/nextcloud/config
- nextcloud_apps: /opt/nextcloud/apps
- redis: /opt/nextcloud/redis
- nextcloud_data: /srv/data/nextcloud
