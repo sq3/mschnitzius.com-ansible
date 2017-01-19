@@ -5,10 +5,11 @@ mschnitzius.com Network Ansibel Repository
 This repository manages the inventory of the mschnitzius.com network.
 
 	roles
-	├── arch-common
-	├── docker
+	├── docker-arch
 	├── mysql-docker
-	└── nextcloud-docker
+	├── nextcloud-docker
+	├── nginx-proxy-docker
+	└── wordpress-docker
 	playbooks
-	├── arch
-	└── nextcloud-docker
+	├── nextcloud-docker
+	└── wordpress-docker
