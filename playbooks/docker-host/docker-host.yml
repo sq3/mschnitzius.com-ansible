@@ -1,0 +1,8 @@
+---
+- hosts: docker-hosts
+  become_method: sudo
+  become: yes
+
+  roles:
+   - docker-arch
+   - { role: webserver,tags: [ 'http-proxy'] }
