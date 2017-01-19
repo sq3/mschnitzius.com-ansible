@@ -4,3 +4,7 @@ int.node-1.nc.mschnitzius.com ansible_port=2222 ansible_python_interpreter=/usr/
 [ferryfive]
 int.storage-1.ff.mschnitzius.com
 int.pi-1.ff.mschnitzius.com
+
+[docker-host]
+netcup
+int.storage-1.ff.mschnitzius.com
