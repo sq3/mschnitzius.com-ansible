@@ -10,3 +10,6 @@
 [submodule "roles/nginx-proxy-docker"]
 	path = roles/nginx-proxy-docker
 	url = git@github.com:sq3/ansible-role-nginx-proxy-docker.git
+[submodule "roles/docker-arch"]
+	path = roles/docker-arch
+	url = git@github.com:sq3/ansible-role-docker-arch.git
