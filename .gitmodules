@@ -7,3 +7,6 @@
 [submodule "roles/wordpress-docker"]
 	path = roles/wordpress-docker
 	url = git@github.com:sq3/ansible-role-wordpress-docker.git
+[submodule "roles/nginx-proxy-docker"]
+	path = roles/nginx-proxy-docker
+	url = git@github.com:sq3/ansible-role-nginx-proxy-docker.git
