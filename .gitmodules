@@ -13,3 +13,6 @@
 [submodule "roles/docker-arch"]
 	path = roles/docker-arch
 	url = git@github.com:sq3/ansible-role-docker-arch.git
+[submodule "roles/dhcpd-docker"]
+	path = roles/dhcpd-docker
+	url = https://github.com/sq3/ansible-role-dhcpd-docker.git
